@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    background-color: rgb(88, 0, 176);
+}
+
+header{
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    color: #fff;
+}
+
+h1{
+    font-style: italic;
+    cursor: pointer;
+}
+
+.sobre-a-loja img{
+    width: 480px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 32px;
+}
+
+.sobre-a-loja{
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.sobre-a-loja img{
+    margin-right: 32px;
+}
+
+.sobre-a-loja h2{
+    padding-bottom: 16px;
+    border-bottom: 3px solid  rgb(88, 0, 176);
+    font-style: italic;
+}
+
+.sobre-a-loja p{
+    margin-top: 48px;
+}
+
+li{
+    list-style: none;
+}
+
+body > h2{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    margin-top: 64px;
+    border-bottom: 3px solid  rgb(88, 0, 176);
+    font-style: italic;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    border: 2px solid rgb(52, 0, 103);
+}
+
+/* .menu > li:hover .submenu{ 
+    display: block;
+    position: absolute;
+    border: 2px solid rgb(52, 0, 103);
+    background-color: rgb(88, 0, 176);
+} */
+
+.submenu li{
+    padding: 0;
+    position: relative;
+}
+
+.submenu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.produtos{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.lista-produtos ul{
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 2%;
+    align-items: baseline;
+}
+
+.lista-produtos h2{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.lista-produtos button{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4px 8px;
+    color: #fff;
+    background-color: rgb(88, 0, 176);
+    border-radius: 4px;
+    border: none;
+    margin-top: 8px;
+}
+
+.lista-produtos img{
+    cursor: pointer;
+    width: 100%;
+}
+
+.lista-produtos button:hover{
+    background-color: rgb(120, 61, 180);
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(88, 0, 176);
+    margin-top: 32px;
+}
+
+footer > p{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+    align-items: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 16px 16px;
+    }
+
+    .sobre-a-loja{
+        display: block;
+    }
+
+    .sobre-a-loja img{
+        display: block;
+        max-width: 668;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-a-loja h2{
+        padding-top: 32px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-a-loja p{
+        max-width: 90%;
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .menu li{
+        padding-left: 16px;
+    }
+
+    body > h2{
+        max-width: 90%;
+    }
+
+    .produtos{
+        max-width: 90%;
+    }
+
+    .lista-produtos ul{
+        display: block;
+    }
+
+    footer p{
+        padding: 16px 16px;
+    }
+
+    .lista-produtos ul li{
+        margin-bottom: 64px;
+    }
+
+    .lista-produtos button{
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        padding: 16px 16px;
+    }
+
+    .sobre-a-loja{
+        display: block;
+    }
+
+    .sobre-a-loja img{
+        display: block;
+        max-width: 668;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-a-loja h2{
+        padding-top: 32px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-a-loja p{
+        max-width: 90%;
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .menu li{
+        padding-left: 16px;
+    }
+
+    body > h2{
+        max-width: 90%;
+    }
+
+    .produtos{
+        max-width: 90%;
+    }
+
+    .lista-produtos ul{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+    }
+
+    .lista-produtos li{
+        margin: auto;
+    }
+
+    footer p{
+        padding: 16px 16px;
+    }
+
+    .lista-produtos ul{
+        margin-bottom: 64px;
+    }
+
+    .lista-produtos button{
+        padding: 16px;
+    }
+}
